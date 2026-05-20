@@ -6,7 +6,7 @@ export default function App(){
   return(
     <div className="min-h-screen bg-gray-50">
       <SearchBar />
-      <div className="max-w-2xl max-auto px-4 py-6 flex flex-col gap-5">
+      <div className="max-w-2xl mx-auto px-4 py-6 flex flex-col gap-5">
         {loading && (
           <div className="flex justify-center py-12">
             <div className="w-8 h-8 border-4 border-blue-200 border-t-blue-600 rounded-full animate-spin"></div>
@@ -24,9 +24,8 @@ export default function App(){
         </>
        )}
       </div>
-      <h1 className="text-2xl text-center py-10">GitHuB Profile Analyzer</h1>
-
-      <ProfileCard />
+      
+      
     </div>
   )
 }

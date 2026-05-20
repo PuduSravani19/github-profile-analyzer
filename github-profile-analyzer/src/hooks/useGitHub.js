@@ -12,7 +12,7 @@ export function useGitHub(){
          setRepos([])
          try{
             // API call 1- fetch user profile
-            const userRes = await fetch(`https://github.com/users/${PuduSravani19}`)
+            const userRes = await fetch(`https://api.github.com/users/${username}`)
             if(!userRes.ok){
                 if(userRes.status === 404){
                     setError('user not found. Check the username and try again.')
@@ -27,7 +27,7 @@ export function useGitHub(){
             }
             const userData = await userRes.json()
             // API call 2 - fetch user repos
-            const reposRes = await fetch(`http://api.github.com/users/${PuduSravani19}/repos?sort=start&per_page=10`)
+            const reposRes = await fetch(`http://api.github.com/users/${username}/repos?sort=start&per_page=10`)
             const reposData = await reposRes.json()
             setUser(userData)
             setRepos(reposData)

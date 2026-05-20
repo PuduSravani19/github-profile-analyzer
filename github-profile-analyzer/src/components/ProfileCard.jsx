@@ -31,15 +31,15 @@ export default function ProfileCard(){
                     <div className="flex gap-4 mt-3 text-sm">
                         <span className="text-gray-700">
                             <span className="font-semibold">{user.followers}</span>
-                            <span className="text-gray-400">followers</span>
+                            <span className="text-gray-400"> followers</span>
                         </span>
                         <span className="text-gray-700">
                             <span className="font-semibold">{user.following}</span>
-                             <span className="text-gray-400">following</span>
+                             <span className="text-gray-400"> following</span>
                         </span>
                           <span className="text-gray-700">
                             <span className="font-semibold">{user.public_repos}</span>
-                             <span className="text-gray-400">repos</span>
+                             <span className="text-gray-400"> repos</span>
                         </span>
 
                     </div>

@@ -1,6 +1,9 @@
 import SearchBar from './components/SearchBar'
 import ProfileCard from './components/ProfileCard'
 import { useGitHubContext } from './context/GitHubContext'
+import StatsCard  from './components/StatsCards'
+import RepoList from './components/RepoList'
+
 export default function App(){
   const {user, error, loading} =useGitHubContext()
   return(
@@ -21,6 +24,8 @@ export default function App(){
        {user && !loading && (
         <>
         <ProfileCard />
+        <StatsCard />
+        <RepoList />
         </>
        )}
       </div>

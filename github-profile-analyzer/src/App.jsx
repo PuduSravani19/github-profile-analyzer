@@ -3,6 +3,7 @@ import ProfileCard from './components/ProfileCard'
 import { useGitHubContext } from './context/GitHubContext'
 import StatsCard  from './components/StatsCards'
 import RepoList from './components/RepoList'
+import LanguageChart from './components/LanguageChart'
 
 export default function App(){
   const {user, error, loading} =useGitHubContext()
@@ -25,6 +26,7 @@ export default function App(){
         <>
         <ProfileCard />
         <StatsCard />
+        <LanguageChart />
         <RepoList />
         </>
        )}

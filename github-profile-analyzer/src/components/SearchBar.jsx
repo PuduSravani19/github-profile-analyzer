@@ -30,6 +30,7 @@ return(
                 </button>
 
             </form>
+            <p className="text-gray-500 text-xs mt-4">Try: torvalds .gaearon .addyosmani</p>
         </div>
 
     </div>
